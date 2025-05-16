@@ -1,0 +1,7 @@
+
+train: c:\Users\luukn\OneDrive\Documenten\RadboudUniversity\Master\Year1\Q3\AIMI\Project\AIMI_MONKEY\train_list.txt
+val:   c:\Users\luukn\OneDrive\Documenten\RadboudUniversity\Master\Year1\Q3\AIMI\Project\AIMI_MONKEY\val_list.txt
+test:  c:\Users\luukn\OneDrive\Documenten\RadboudUniversity\Master\Year1\Q3\AIMI\Project\AIMI_MONKEY\test_list.txt
+
+nc: 1
+names: ['MNL']

@@ -1,0 +1,17 @@
+thumbs\val\images\A_P000020.jpg
+thumbs\val\images\A_P000029.jpg
+thumbs\val\images\A_P000033.jpg
+thumbs\val\images\B_P000002.jpg
+thumbs\val\images\C_P000025.jpg
+thumbs\val\images\C_P000036.jpg
+thumbs\val\images\C_P000037.jpg
+thumbs\val\images\C_P000039.jpg
+thumbs\val\images\C_P000040.jpg
+thumbs\val\images\D_P000001.jpg
+thumbs\val\images\D_P000005.jpg
+thumbs\val\images\D_P000009.jpg
+thumbs\val\images\D_P000012.jpg
+thumbs\val\images\D_P000013.jpg
+thumbs\val\images\D_P000014.jpg
+thumbs\val\images\D_P000016.jpg
+thumbs\val\images\D_P000017.jpg
