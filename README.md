@@ -9,23 +9,22 @@ In this work, we train a Faster R-CNN model on PAS-Original and PAS-Diagnostic d
 - **Lisanne Huisman** — lisanne.huisman@ru.nl  
 - **Luuk Neervens** — luuk.neervens@ru.nl  
 
-
-
-
-
-
 ## About
 
 This project investigates the automated detection of inflammatory cells in kidney transplant biopsies using histopathological whole slide images (WSIs). Accurate quantification of inflammation plays a critical role in diagnosing transplant rejection, yet manual cell annotation is time-consuming and subject to inter-observer variability.
 
 To address this, we develop a pipeline based on Faster R-CNN, a state-of-the-art object detection model, and evaluate its performance across different data domains. The model is initially trained on the PAS-Original and PAS-Diagnostic datasets and then tested on the PAS-CpG domain to assess generalizability. We further analyze performance improvements through fine-tuning on PAS-CpG, enabling us to measure the benefits of cross-domain adaptation.
 
+A last model is defined (i.e. model C) which is solely trained on PAS-CpG and tested on PAS-CpG, to measure baseline performance.
+
 ## Preprocessing
 
-The workflow begins with the extraction of fixed-size patches from high-resolution `.tif` whole slide images using the `patch_extraction.ipynb` notebook. Each patch is paired with a corresponding `.json` annotation file that specifies bounding boxes for inflammatory cells. Patch generation is modular and configurable, allowing adjustment of parameters such as the number of patches per file and the specific dataset split (training or testing).
+The workflow begins with the extraction of 256 by 256 sized patches from high-resolution `.tif` whole slide images using the `patch_extraction.ipynb` notebook. Each patch is paired with a corresponding `.json` annotation file that specifies ground-truth boxes for inflammatory cells. Patch generation is modular and configurable, allowing adjustment of parameters such as the number of patches per file and the specific dataset split (training or testing).
+
+
 
 ## Evaluation and Metrics
-Model training and evaluation are performed in the pipeline.ipynb notebook. We assess performance using Intersection over Union (IoU) as a way to compute standard object detection metrics. These metrics include:
+Model training and evaluation are performed in the `pipeline.ipynb` notebook. We assess performance using Intersection over Union (IoU) as a way to compute standard object detection metrics. These metrics include:
 
 - Precision
 - Recall
