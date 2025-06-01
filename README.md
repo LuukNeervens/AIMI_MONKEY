@@ -9,7 +9,7 @@ In this work, we train a Faster R-CNN model on PAS-Original and PAS-Diagnostic d
 - **Lisanne Huisman** — lisanne.huisman@ru.nl  
 - **Luuk Neervens** — luuk.neervens@ru.nl  
 
----
+
 
 ## Table of Contents
 
@@ -18,14 +18,12 @@ In this work, we train a Faster R-CNN model on PAS-Original and PAS-Diagnostic d
 - [License](#license)  
 - [Contact](#contact)
 - 
----
+
 
 ## About
 
 Detailed description of the project.  
 Explain the motivation, what problem it solves, and why it’s useful.
-
----
 
 ## Usage
 
