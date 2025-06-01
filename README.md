@@ -22,15 +22,16 @@ To address this, we develop a pipeline based on Faster R-CNN, a state-of-the-art
 
 ## Preprocessing
 
-The workflow begins with the extraction of fixed-size patches from high-resolution .tif whole slide images using the patch_extraction.ipynb notebook. Each patch is paired with a corresponding .json annotation file that specifies bounding boxes for inflammatory cells. Patch generation is modular and configurable, allowing adjustment of parameters such as the number of patches per file and the specific dataset split (training or testing).
+The workflow begins with the extraction of fixed-size patches from high-resolution `.tif` whole slide images using the `patch_extraction.ipynb` notebook. Each patch is paired with a corresponding `.json` annotation file that specifies bounding boxes for inflammatory cells. Patch generation is modular and configurable, allowing adjustment of parameters such as the number of patches per file and the specific dataset split (training or testing).
 
 ## Evaluation and Metrics
 Model training and evaluation are performed in the pipeline.ipynb notebook. We assess performance using Intersection over Union (IoU) as a way to compute standard object detection metrics. These metrics include:
 
-Precision
-Recall
-F1-score 
-Free-Response Receiver Operating Characteristic curves(FROC)
+- Precision
+- Recall
+- F1-score 
+- Free-Response Receiver Operating Characteristic curves(FROC)
+  
 These metrics allow us to quantify the model’s detection accuracy, domain transferability, and gains from fine-tuning.
 
 Ultimately, this project contributes to the development of more robust, adaptable AI tools in computational pathology that can assist clinicians in identifying inflammation across diverse staining protocols and imaging variations.
