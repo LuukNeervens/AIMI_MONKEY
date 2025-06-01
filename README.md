@@ -15,7 +15,7 @@ This project investigates the automated detection of inflammatory cells in kidne
 
 To address this, we develop a pipeline based on Faster R-CNN, a state-of-the-art object detection model, and evaluate its performance across different data domains. The model is initially trained on the PAS-Original and PAS-Diagnostic datasets and then tested on the PAS-CpG domain to assess generalizability. We further analyze performance improvements through fine-tuning on PAS-CpG, enabling us to measure the benefits of cross-domain adaptation.
 
-A last model is defined (i.e. model C) which is solely trained on PAS-CpG and tested on PAS-CpG, to measure baseline performance.
+A final model, referred to as Model C, is trained and tested exclusively on PAS-CpG data to estimate ceiling-level performance.
 
 ## Preprocessing
 
