@@ -11,13 +11,7 @@ In this work, we train a Faster R-CNN model on PAS-Original and PAS-Diagnostic d
 
 
 
-## Table of Contents
 
-- [About](#about)  
-- [Usage](#usage)  
-- [License](#license)  
-- [Contact](#contact)
-- 
 
 
 ## About
