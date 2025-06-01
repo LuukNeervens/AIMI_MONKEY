@@ -21,6 +21,12 @@ A last model is defined (i.e. model C) which is solely trained on PAS-CpG and te
 
 The workflow begins with the extraction of 256 by 256 sized patches from high-resolution `.tif` whole slide images using the `patch_extraction.ipynb` notebook. Each patch is paired with a corresponding `.json` annotation file that specifies ground-truth boxes for inflammatory cells. Patch generation is modular and configurable, allowing adjustment of parameters such as the number of patches per file and the specific dataset split (training or testing).
 
+<p align="left">
+  <img src="images/stainings.png" alt="PAS-CpG example patch" width="400"/>
+  <br/>
+  <em>Figure 1: The three PAS staining types used in this study. From left to right,
+CpG staining, diagnostic staining, and original staining.</em>
+</p>
 
 
 ## Evaluation and Metrics
@@ -32,6 +38,12 @@ Model training and evaluation are performed in the `pipeline.ipynb` notebook. We
 - Free-Response Receiver Operating Characteristic curves(FROC)
   
 These metrics allow us to quantify the model’s detection accuracy, domain transferability, and gains from fine-tuning.
+
+<p align="left">
+  <img src="images/predictions.png" alt="PAS-CpG example patch" width="400"/>
+  <br/>
+  <em>Figure 2: Visualization of the model's predictions and ground-truths for a single patch.</em>
+</p>
 
 Ultimately, this project contributes to the development of more robust, adaptable AI tools in computational pathology that can assist clinicians in identifying inflammation across diverse staining protocols and imaging variations.
 
