@@ -22,8 +22,8 @@ Explain the motivation, what problem it solves, and why it’s useful.
 ## Usage
 
 The final product was implemented utilizing two notebooks: 
-1. patch_extraction.ipynb
-2. pipeline.ipynb
+1. `patch_extraction.ipynb`
+2. `pipeline.ipynb`
 
 `patch_extraction.ipynb` was utilized to extract the patches (both for train and test) out of the original .tif files. For each patch, a corresponding unique .json file is constructed containing the annotations for that patch (i.e. the location of inflammatory cells). At the top of this notebook filepath variables are specified. It is important to change `root_folder` to your local directory in which the data is stored. Assuming an identical folder structure, the rest of the code should work automatically. Separate sections are implemented for extracting the training patches (from pas-diagnostics, pas-original, pas-cpg) and testing patches (from pas-cpg), respectively. Within each section, variables can be adjusted as desired (e.g. `NUM_PATCHES_PER_FILE`)
 
